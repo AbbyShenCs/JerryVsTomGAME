@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/B">
+
+        <ImageView
+            android:id="@+id/user_photo"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/photo" />
+
+        <ImageView
+            android:id="@+id/menu_add"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/add" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:text="手机号登录"
+        android:textColor="@color/teal_200"
+        android:textSize="40dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/phone_number_login"
+        android:layout_width="350dp"
+        android:layout_height="70dp"
+        android:hint="手机号:"
+        android:textSize="20dp"
+        android:maxLength="15"
+        android:singleLine="true"
+        android:background="@drawable/et_smallqq"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:paddingLeft="20dp"/>
+
+    <EditText
+        android:id="@+id/et_psw_phone"
+        android:layout_width="350dp"
+        android:layout_height="70dp"
+        android:hint="密码:"
+        android:textSize="20dp"
+        android:singleLine="true"
+        android:background="@drawable/et_smallqq"
+        android:layout_gravity="center"
+        android:layout_marginTop="15sp"
+        android:inputType="textPassword"
+        android:paddingLeft="20dp"/>
+
+    <Button
+        android:id="@+id/btn_Login"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:text="登录"
+        android:textColor="@color/white"
+        android:textSize="24dp"
+        android:background="@drawable/edit_background_3"
+        android:layout_marginTop="30dp"
+        android:textStyle="bold"/>
+
+</LinearLayout>

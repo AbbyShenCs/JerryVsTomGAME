@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/pause_bg"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/pauseText"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="游戏暂停"
+        android:textColor="#000"
+        android:textSize="20dp"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        />
+    <Button
+        android:id="@+id/pause_playBtn"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="回到游戏"
+        android:textColor="#fff"
+        android:background="@drawable/button_nor"
+        android:layout_below="@+id/pauseText"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        />
+    <Button
+        android:id="@+id/pause_replayBtn"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="回到主菜单"
+        android:textColor="#fff"
+        android:background="@drawable/button_nor"
+        android:layout_below="@+id/pause_playBtn"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="40dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        />
+
+</RelativeLayout>

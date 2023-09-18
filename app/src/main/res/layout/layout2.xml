@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    1.这是一个线性布局
+    2.layout_width.layout_height定义布局的宽度和高度
+    3.match_parent和父布局相匹配
+    4.排列方向：垂直排列
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/B">
+
+        <ImageView
+            android:id="@+id/user_photo"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/photo" />
+
+        <ImageView
+            android:id="@+id/menu_add"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/add" />
+
+    </RelativeLayout>
+
+    <TextView
+    android:layout_width="wrap_content"
+    android:textStyle="bold"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_marginTop="30dp"
+    android:text="注册信息"
+    android:textColor="@color/teal_200"
+    android:textSize="40dp"/>
+
+    <EditText
+        android:id="@+id/et_user_name2"
+        android:layout_width="370dp"
+        android:layout_height="45dp"
+        android:hint="请输入账号:"
+        android:textSize="18dp"
+        android:maxLength="15"
+        android:singleLine="true"
+        android:background="@drawable/edit_background"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="20dp" />
+
+    <EditText
+        android:id="@+id/et_psw2"
+        android:layout_width="370dp"
+        android:layout_height="45dp"
+        android:hint="请输入密码:"
+        android:textSize="18dp"
+        android:maxLength="15"
+        android:singleLine="true"
+        android:background="@drawable/edit_background"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:inputType="textPassword"
+        android:paddingLeft="20dp"/>
+
+    <EditText
+        android:id="@+id/et_psw2_again"
+        android:layout_width="370dp"
+        android:layout_height="45dp"
+        android:hint="请再次输入密码:"
+        android:textSize="18dp"
+        android:maxLength="15"
+        android:singleLine="true"
+        android:background="@drawable/edit_background"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:inputType="textPassword"
+        android:paddingLeft="20dp"/>
+
+    <LinearLayout
+        android:layout_width="370dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:background="@drawable/edit_background">
+
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="性别"
+        android:textSize="18dp"
+        android:layout_marginLeft="20dp"
+        android:paddingLeft="2dp"
+        android:layout_gravity="center"/>
+
+        <RadioGroup
+        android:id="@+id/GenderRadio"
+        android:layout_width="6dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginLeft="30dp"
+        android:paddingLeft="2dp">
+
+            <RadioButton
+               android:id="@+id/girl"
+               android:layout_width="wrap_content"
+               android:layout_height="33dp"
+               android:text="女生"/>
+
+            <RadioButton
+               android:id="@+id/boy"
+               android:layout_width="wrap_content"
+               android:layout_height="33dp"
+               android:text="男生" />
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <EditText
+       android:layout_width="370dp"
+       android:layout_height="50dp"
+       android:hint="姓名："
+       android:textSize="18dp"
+       android:maxLength="15"
+       android:background="@drawable/edit_background"
+       android:layout_marginTop="20dp"
+       android:layout_gravity="center"
+       android:paddingLeft="20dp" />
+
+    <EditText
+        android:layout_width="370dp"
+        android:layout_height="50dp"
+        android:hint="学号："
+        android:textSize="18dp"
+        android:maxLength="15"
+        android:background="@drawable/edit_background"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:paddingLeft="20dp"/>
+
+    <EditText
+        android:id="@+id/phone_number"
+        android:layout_width="370dp"
+        android:layout_height="50dp"
+        android:hint="手机号："
+        android:textSize="18dp"
+        android:maxLength="15"
+        android:background="@drawable/edit_background"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:paddingLeft="20dp"/>
+
+    <Button
+        android:id="@+id/affirm"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="确认"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:background="@drawable/edit_background_3"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"/>
+
+
+
+
+</LinearLayout>

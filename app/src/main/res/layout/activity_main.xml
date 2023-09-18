@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@drawable/start_bg"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/exit_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="25dp"
+        android:layout_marginBottom="77dp"
+        android:background="@drawable/start_btn"
+        android:paddingHorizontal="15dp"
+        android:text="退出游戏"
+        android:textColor="#fff"
+        android:textSize="25sp" />
+    <Button
+        android:id="@+id/setting_btn"
+        android:layout_width="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="25dp"
+        android:layout_height="wrap_content"
+        android:text="音乐选择"
+        android:textColor="#fff"
+        android:paddingHorizontal="15dp"
+        android:layout_above="@+id/exit_btn"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/start_btn"
+        android:textSize="25sp"/>
+
+    <Button
+        android:id="@+id/start_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/setting_btn"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="25dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/start_btn"
+        android:paddingHorizontal="15dp"
+        android:text="开始游戏"
+        android:textColor="#fff"
+        android:textSize="25sp" />
+
+
+
+</RelativeLayout>

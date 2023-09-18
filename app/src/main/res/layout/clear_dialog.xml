@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/clear_bg"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/gameclear_text"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="恭喜通关"
+        android:textSize="20dp"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="10dp"
+        />
+    <TextView
+        android:id="@+id/gameclear_score"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="分数： 0"
+        android:textSize="20dp"
+        android:textColor="#000"
+        android:gravity="center_horizontal"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@+id/gameclear_text"
+        />
+
+    <Button
+        android:id="@+id/gameclear_replay"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/gameclear_score"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/button_nor"
+        android:text="通关动画" />
+    <Button
+        android:id="@+id/gameclear_exitBtn"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="退出游戏"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/button_nor"
+        android:layout_below="@+id/gameclear_replay"
+        />
+</RelativeLayout>

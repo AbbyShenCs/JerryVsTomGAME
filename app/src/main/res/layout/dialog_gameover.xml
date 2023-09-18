@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/over_bg"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/gameover_text"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center_horizontal"
+        android:text="游戏结束（请选择操作）"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/gameover_score"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/gameover_text"
+        android:layout_marginBottom="10dp"
+        android:gravity="center_horizontal"
+        android:text="分数： 0"
+        android:textColor="#000"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/gameover_replay"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/gameover_score"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/button_nor"
+        android:text="重新开始" />
+    <Button
+        android:id="@+id/gameover_exitBtn"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="退出游戏"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/button_nor"
+        android:layout_below="@+id/gameover_replay"
+        />
+</RelativeLayout>

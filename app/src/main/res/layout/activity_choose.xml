@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/choosing"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:text="角色选择"
+        android:textColor="@color/black"
+        android:textSize="50dp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/zd1"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            app:srcCompat="@mipmap/zd2"
+            tools:ignore="ImageContrastCheck" />
+
+        <ImageView
+            android:id="@+id/zd2"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            app:srcCompat="@mipmap/zd5" />
+
+        <ImageView
+            android:id="@+id/zd3"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            app:srcCompat="@mipmap/zd4" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="0dp"
+            android:layout_height="300dp"
+            android:layout_weight="1"
+            app:srcCompat="@mipmap/hj"
+            tools:ignore="ImageContrastCheck" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="0dp"
+            android:layout_height="300dp"
+            android:layout_weight="1"
+            app:srcCompat="@mipmap/hj2" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="0dp"
+            android:layout_height="300dp"
+            android:layout_weight="1"
+            app:srcCompat="@mipmap/hj3" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="CHOICE"
+        android:textColor="@color/black"
+        android:textSize="40dp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btn_hj1"
+            android:layout_width="0dp"
+            android:layout_height="90dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/button_nor"
+            android:text="恶魔杰瑞"
+            android:textColor="@color/black"
+            android:textSize="30dp" />
+
+        <Button
+            android:id="@+id/btn_hj2"
+            android:layout_width="0dp"
+            android:layout_height="90dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/button_nor"
+            android:text="侦探杰瑞"
+            android:textColor="@color/black"
+            android:textSize="30dp" />
+
+        <Button
+            android:id="@+id/btn_hj3"
+            android:layout_width="0dp"
+            android:layout_height="90dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/button_nor"
+            android:text="鼠小妹"
+            android:textColor="@color/black"
+            android:textSize="30dp" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

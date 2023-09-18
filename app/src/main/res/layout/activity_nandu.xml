@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/nandu"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="200dp"
+        android:text="难度选择"
+        android:textColor="#000"
+        android:background="@drawable/button_p"
+        android:textSize="50dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btn_easy"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:text="EASY"
+        android:textSize="30dp"
+        android:textColor="@color/black"
+        android:background="@drawable/button_nor"
+        android:layout_marginTop="20dp"
+        />
+    <Button
+        android:id="@+id/btn_normal"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:text="NORMAL"
+        android:textSize="30dp"
+        android:textColor="@color/black"
+        android:background="@drawable/button_nor"
+
+        />
+    <Button
+        android:id="@+id/btn_hard"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:text="HARD"
+        android:textSize="30dp"
+        android:textColor="@color/black"
+        android:background="@drawable/button_nor"
+
+        />
+    <Button
+        android:id="@+id/btn_impossible"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:text="IMPOSSIBLE"
+        android:textSize="30dp"
+        android:textColor="@color/black"
+        android:background="@drawable/button_nor"
+        />
+</LinearLayout>

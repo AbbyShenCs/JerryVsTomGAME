@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    1.这是一个线性布局
+    2.layout_width.layout_height定义布局的宽度和高度
+    3.match_parent和父布局相匹配
+    4.排列方向：垂直排列
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+<!--
+orientation:布置方式，有水平布局"horizontal"和垂直布局"vertical"两种
+-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_gravity="center_vertical"
+        android:text="手机统一登陆"
+        android:textStyle="bold"
+        android:gravity="center_vertical"
+        android:background="@color/B"
+        android:textColor="@color/white"
+        android:paddingLeft="15sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp">
+
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:src="@drawable/smallqq" />
+
+
+
+
+    </LinearLayout>
+
+
+    <!--
+    TextView:
+    layout_gravity:控件相对于父容器的对齐方式
+    layout_marginTop：指定该属性所在控件距上部最近控件的最小值
+    text：显示的文本信息
+    textColor：文本信息颜色
+    textStyle="bold" 文本加粗
+    textSize：文本大小
+    -->
+
+    <EditText
+        android:id="@+id/et_user_name1"
+        android:layout_width="350dp"
+        android:layout_height="70dp"
+        android:hint="账号:"
+        android:textColorHint="@color/G"
+        android:textSize="20dp"
+        android:maxLength="15"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:background="@drawable/et_smallqq"
+        android:layout_gravity="center"
+        android:layout_marginTop="35dp"
+        android:selectAllOnFocus="true"
+        android:paddingLeft="20dp"/>
+<!--
+EditText：
+hint：默认提示文本的内容
+textColorHint：默认提示文本的颜色
+inputType：设置输入文本类型
+padding：增加组件内文字和组件边框的距离
+margin：增加组件相对其他控件的距离
+maxLength：最大输入字符长度
+maxLines：最大输入行数
+singleLine：单行输入不换行
+background：设置背景
+selectAllOnFocus(true)：让EditText获得焦点时选中全部文本
+-->
+
+    <EditText
+        android:id="@+id/et_psw1"
+        android:layout_width="350dp"
+        android:layout_height="70dp"
+        android:layout_gravity="center"
+        android:background="@drawable/et_smallqq"
+        android:hint="密码:"
+        android:inputType="textPassword"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:textColorHint="@color/G"
+        android:textSize="20dp"
+        android:layout_marginTop="15sp"
+        android:paddingLeft="20dp"/>
+
+    <Button
+        android:id="@+id/btn_Login"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:text="登录"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="24dp"
+        android:background="@drawable/edit_background_3"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"/>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="70dp">
+
+        <TextView
+            android:id="@+id/phone_login"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="left|center"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:text="手机号登陆"
+            android:textSize="20sp"
+            android:textColor="@color/black" />
+
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center_vertical"
+            android:background="@color/colorBlackGery" />
+
+        <TextView
+            android:id="@+id/forget_psw"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="忘记密码"
+            android:textSize="20sp"
+            android:textColor="@color/black" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center_vertical"
+            android:background="@color/colorBlackGery" />
+
+        <TextView
+            android:id="@+id/tex_register"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="right|center"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:text="新用户注册"
+            android:textSize="20sp"
+            android:textColor="@color/black" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="登录即代表同意服务条款"
+        android:textSize="15sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="70dp"
+        android:layout_gravity="center"/>
+
+
+</LinearLayout>
